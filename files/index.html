@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspen Colorado</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel = "stylesheet" href="NORMALIZE/normalize.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+<style media="screen">
+ul{
+list-style: none;}
+
+*
+{
+  margin:0;
+  padding: 0;
+}
+hr{
+  margin: 150px 0 0 0;
+  background-color: grey;
+}
+.adv{
+  margin-bottom: 3.25em;
+}
+.rule{
+  margin:100px 0;
+}
+  .col-borders{
+    border-right:solid black 4px;
+    border-left:solid black 4px;
+  }
+  .greens-link{
+    color: black;
+  }
+
+  .greens-link:hover {
+  text-decoration: underline;
+  color:black;
+
+}
+.img-div{
+  background-image: url(deck.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.title{
+  text-shadow: 3px 5px 1px black;
+}
+.adventures{
+  border:inset grey 1px;
+    border-radius: 25px;
+    line-height: 2;
+
+
+}
+.txt:hover{
+  transform: scale(1.25);
+  /* z-index: 99; */
+  /* color:white; */
+background-color: lightgrey;
+transition-duration: 1s;
+border: solid grey 2px;
+/* text-shadow: 2px 2px 2px black; */
+  box-shadow: 2px 4px 10px 0px black;
+}
+.logo{
+  font-family:fantasy;
+
+}
+
+/* *****************************PLUGIN*/
+.card-carousel {
+  display: flex;
+  /* border: solid red 1px; */
+  justify-content: center;
+  position: relative;
+}
+
+.card-carousel .my-card {
+  line-height: 2;
+  height: 20rem;
+  width: 12rem;
+  padding:  2rem 0;
+  position: relative;
+  z-index: 1;
+  -webkit-transform: scale(0.6) translateY(-2rem);
+  transform: scale(0.6) translateY(-2rem);
+  opacity: 0;
+  cursor: pointer;
+  pointer-events: none;
+  background: #2e5266;
+  background: linear-gradient(to top, #2e5266, #6e8898);
+  transition: 1s;
+}
+
+.card-carousel .my-card:after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  border-radius: 100%;
+  background-color: rgba(0,0,0,0.3);
+  bottom: -5rem;
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+}
+
+.card-carousel .my-card.active {
+  z-index: 3;
+  -webkit-transform: scale(1) translateY(0) translateX(0);
+  transform: scale(1) translateY(0) translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+  transition: 1s;
+}
+
+.card-carousel .my-card.prev, .card-carousel .my-card.next {
+  z-index: 2;
+  -webkit-transform: scale(0.8) translateY(-1rem) translateX(0);
+  transform: scale(0.8) translateY(-1rem) translateX(0);
+  opacity: 0.6;
+  pointer-events: auto;
+  transition: 1s;
+}
+
+/*********CUSTOM CASROSEL CSS**********/
+.card-carousel .my-card:nth-child(0):before {
+  content: '0';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(1):before {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(2):before {
+
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card-carousel .my-card:nth-child(3):before {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+
+
+  .addDiv{
+    background-color: #eee;
+    color:white;
+  }
+}
+</style>
+  <body>
+    <!-- *****************
+  ***********************
+************NAVBAR********** -->
+    <nav class="navbar navbar-expand-md  navbar-dark bg-dark sticky-top">
+      <a class="navbar-brand logo" href="#">D</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse  " id="navbarNavAltMarkup">
+        <div id="navB" class="navbar-nav  w-100 justify-content-around ">
+          <a class="nav-item nav-link " href="#eat">Eateries <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link " href="#AG">AG</a>
+          <a class="nav-item nav-link " href="#outdoor">OutDoor Activities</a>
+          <a id = "about" class="nav-item nav-link " href="#about">about</a>
+        </div>
+      </div>
+    </nav>
+    <!-- *****************
+  ***********************
+************NAVBAR********** -->
+
+<!-- *****************
+***********************
+************jumboTron********** -->
+<div class=" img-div jumbotron jumbotron-fluid bg-dark">
+  <div id="cnt-div"class="  container text-center text-white">
+    <h1 id='aspen' class=" title display-3 ">The Aspen Atlas</h1>
+  <p id='title'class="title lead">a practical guide for the Adventurous Spirit</p>
+  </div>
+</div>
+<!-- *****************
+***********************
+************jumboTron********** -->
+
+
+<!-- *****************
+***********************
+************container********** -->
+<h2 id="eat" class="text-muted text-center p-5 my-5">Top Notch Eateries</h2>
+<div  class="container mt-5 ">
+  <div class="row text-center  mb-5">
+    <div class="col-md-4 mx-auto  mb-4">
+      <!--***********CARD**********-->
+      <div class="card txt" >
+  <img class="card-img-top rounded" src="chairs.jpg" alt="Card image cap">
+  <div class="card-body">
+    <p class=" card-text lead">Restaurants</p>
+  </div>
+</div>
+  <!--***********CARD**********-->
+
+    </div>
+    <div class="col-md-4 mx-auto">
+        <!--***********CARD**********-->
+      <div class="card txt" >
+  <img class="card-img-top rounded" src="beer.jpg" alt="Card image cap">
+  <div class="card-body">
+    <p class="  card-text lead"> Bars</p>
+  </div>
+</div>
+  <!--***********CARD**********-->
+
+    </div>
+
+
+  </div>
+
+
+</div>
+
+
+<hr>
+
+
+
+<h2 id="AG" class="text-muted px-5 py-3 mt-5 text-center">Aspen Greens </h2>
+<div class="container ">
+
+<div class="row">
+<div class="col-md-12 mb-5">
+  <p>Each dispensary ensures responsible lab testing for the safety of our
+    member patients through PharmLabs, a Southern California medical
+     marijuana lab testing and analytic service. In this manner we are
+     able to provide
+     only the highest quality, safe and potent product to our consumers.</p>
+
+
+
+</div>
+<div class="col-md-5 mx-auto col-borders  mb-5">
+<a class="greens-link d-inline-block " target="_blank" href="https://cannabismaven.io/theweedblog/growing/the-top-8-marijuana-strains-in-2018-8Bjy7qx73E64CU4RhuAKEw/">
+  <h1 class="w-auto">Strain of The Month</h1>
+</a>
+  <p><em>Jack Herer:</em></p>
+  <p> boasts an earthy pine and citrusy taste that is
+    easily recognizable and provides uses with subtle
+    cerebral effects that aren’t overwhelming. Also,
+    this particular strain is perfect for those inexperienced
+    with marijuana, medical marijuana patients, or for those
+    seeking a strain that can be used during the day if you’re
+    fairly active.</p>
+</div>
+<div class="col-md-5 col-borders mx-auto mb-5">
+  <a class="greens-link d-inline-block" target="_blank"  href="https://www.leafly.com/news/strains-products/7-cannabis-gadgets-for-high-tech-stashes">
+     <h1>Top Stories and Tech</h1>
+   </a>
+
+  <p><em>The Otto: by Bannana Bros</em></p>
+  <p>One part grinder, one part rolling machine, this
+     clever number by Banana Bros is taking the cannabis
+      tech world by storm. The OTTO contains an innovative
+      design that can roll up to 30 joints in one charge and
+       is both odor-proof and spill-proof. Perfect for arthritic
+       hands or a toke on the go, this gadget will be a permanent
+       fixture in your cannabis
+     repertoire. Keep an eye out for a Leafly employee vs.
+      OTTO joint-off!</p>
+
+</div>
+</div>
+</div>
+<div class="container-fluid d-flex flex-column align-items-end p-md-0">
+  <!--Move the button to the right side of ther screen-->
+  <button class="  btn btn-info btn-md  mb-5"  data-toggle="collapse" data-target="#stores" aria-expanded="false" aria-controls="stores"type="button" name="button">Take a trip to exclusive Distributors dropdown button</button>
+  <div class = "w-100 border border-danger collapse mb-5 p-5 text-center" id="stores">
+    <h1 class="p-5">Popular Aspen dispensaries </h1>
+    <video src="" controls="">
+        <source src="https://" type="video/">
+    </video>
+
+  </div>
+</div>
+
+<hr class="rule">
+
+
+
+<!-- *****************
+***********************
+************OUT DOOR ADVENTURES********** -->
+
+<h2 id="outdoor"class="text-muted mb-5 adv text-center">Outdoor Adventures</h2>
+
+
+
+
+<div class=" text-center container card-carousel ">
+
+<div class=" my-card">
+
+  <h4 class="mb-3">One With Nature </h4>
+  <p class="lead">(Nature hikes eco-friendly stuff)</p>
+
+</div>
+
+<div class="my-card">
+  <h4>Feed your adventurous side</h4>
+
+
+  <ul >
+    <li class="lead">Snow Boarding</li>
+    <li class="lead">Skiing</li>
+    <li class="lead">Free Climbing</li>
+  </ul>
+</div>
+
+<div class="  my-card">
+
+   <h4>City events</h4>
+  <p class="lead ">Community Events</p>
+</div>
+</div>
+
+
+
+
+<hr style="background-color:black;">
+
+ <footer class="pt-5">
+
+  <p class="d-inline mr-3">&copy;2019|| Dwayne Bynum </p>
+  <a href="#top" class="  fa fa-facebook"></a>
+  <a href="#top" class="mr-1 fa fa-twitter"></a><a href="#top" class=" mr-2 fa fa-instagram"></a>
+  <!-- Add font awesome icons -->
+
+</footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+        crossorigin="anonymous">
+</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+    $num = $('.my-card').length;
+
+$even = $num / 2;
+
+$odd = ($num + 1) / 2;
+
+
+
+if ($num % 2 == 0) {
+
+  $('.my-card:nth-child(' + $even + ')').addClass('active');
+
+  $('.my-card:nth-child(' + $even + ')').prev().addClass('prev');
+
+  $('.my-card:nth-child(' + $even + ')').next().addClass('next');
+
+} else {
+
+  $('.my-card:nth-child(' + $odd + ')').addClass('active');
+
+  $('.my-card:nth-child(' + $odd + ')').prev().addClass('prev');
+  $('.my-card:nth-child(' + $odd + ')').next().addClass('next');
+
+}
+
+
+
+$('.my-card').click(function() {
+
+  $slide = $('.active').width();
+
+  console.log($('.active').position().left);
+
+
+
+  if ($(this).hasClass('next')) {
+
+    $('.card-carousel').stop(false, true).animate({left: '-=' + $slide});
+
+  } else if ($(this).hasClass('prev')) {
+
+    $('.card-carousel').stop(false, true).animate({left: '+=' + $slide});
+
+  }
+
+
+
+  $(this).removeClass('prev next');
+
+  $(this).siblings().removeClass('prev active next');
+
+
+
+  $(this).addClass('active');
+
+  $(this).prev().addClass('prev');
+
+  $(this).next().addClass('next');
+
+});
+// Keyboard nav
+
+$('html body').keydown(function(e) {
+
+  if (e.keyCode == 37) { // left
+
+    $('.active').prev().trigger('click');
+
+  }
+
+  else if (e.keyCode == 39) { // right
+
+    $('.active').next().trigger('click');
+
+  }
+
+});
+
+
+    </script>
+    <script type="text/javascript">
+
+    </script>
+  </body>
+</html>
