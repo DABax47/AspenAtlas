@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!--Jquery needed for the autocomplete plugin-->
+    <script src="jquery-2.1.1.js"></script>
+    <script src="jquery.autocomplete.min.js"></script>
+    <!--End-->
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel = "stylesheet" href="NORMALIZE/normalize.css">
+    <title>Create A Day</title>
+    <style media="screen">
+
+    </style>
+  </head>
+  <body>
+    <!--Nav-->
+    <nav class="navbar navbar-expand-md  navbar-dark bg-dark sticky-top">
+      <a class="navbar-brand logo" href="#">D</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse  " id="navbarNavAltMarkup">
+        <div id="navB" class="navbar-nav  w-100 justify-content-around ">
+          <a class="nav-item nav-link " href="#eat">Eateries <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link " href="#AG">AG</a>
+          <a class="nav-item nav-link " href="#outdoor">OutDoor Activities</a>
+          <a id = "about" class="nav-item nav-link " href="createAday.html">Create A Day</a>
+        </div>
+      </div>
+    </nav>
+    <!--End Nav-->
+
+    <div class="text-center p-5 mx-auto main container-fluid ">
+      <div class="row">
+        <div class="col-6 ">
+          <label class="d-block display-4" for="suggested">Suggested activities</label>
+          <select id="suggested" class="" name="">
+            <option value="hike through ...">hiking</option>
+            <option value="Eat at local burger joint">eat a local burger joint</option>
+            <option value="Go Skiing at...">skiing</option>
+          </select>
+        </div>
+        <div class="col-6">
+          <label class="d-block display-4" for="in">Create your own</label>
+
+            <input id='in'type="text" name="" value="" placeholder="Create your own">
+        </div>
+        <div class="row mx-auto">
+          <div class="col-12 ">
+            <h1 class ="display-2">My Day</h1>
+            <div class=" divCon  container ">
+              <div class="row d-flex">
+                <div class="col mr-5 pr-5">
+                  <ul class="">
+
+
+                  </ul>
+
+                </div>
+
+              </div>
+
+            </div>
+            <button class=" my-5 btn btn-info" id = "btn" type="button" name="button">Add to MyList</button>
+          </div>
+
+        </div>
+      </div>
+
+
+
+    </div><!-- end main container -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+
+      var $button = $('#btn');
+      var $div = $('.divCon');
+      var $ul = $('ul');
+      var $opt = ['hiking','Go to Mt Burger','skiing'];
+      var $select = $('select');
+      var $option = $('optiton');
+
+      //event Listener
+      $($button).on('click', function(){
+      var x=   $($select).val();
+        console.log(x);
+
+        $($ul).append(`<li class='my-4'>${x}<button class =' btn-sm btn btn-danger ml-5'>remove</button></li> `);
+
+      });
+      $($ul).on('click',function(event){
+        console.log(event.target);
+        $(event.target).parent().remove();
+
+      });
+
+    //autocomplete Plugin
+         var auto = [
+           "ActionScript",
+           "AppleScript",
+           "Asp",
+           "BASIC",
+           "C",
+           "C++",
+           "Clojure",
+           "COBOL",
+           "ColdFusion",
+           "Erlang",
+           "Fortran",
+           "Groovy",
+           "Haskell",
+           "Java",
+           "JavaScript",
+           "Lisp",
+           "Perl",
+           "PHP",
+           "Python",
+           "Ruby",
+           "Scala",
+           "Scheme"
+         ];
+         $( "#in" ).autocomplete({
+           lookup: auto
+         });
+
+    </script>
+
+  </body>
+</html>

@@ -59,20 +59,12 @@ hr{
 
 
 }
-.txt:hover{
-  transform: scale(1.25);
-  /* z-index: 99; */
-  /* color:white; */
-background-color: lightgrey;
-transition-duration: 1s;
-border: solid grey 2px;
-/* text-shadow: 2px 2px 2px black; */
-  box-shadow: 2px 4px 10px 0px black;
-}
+
 .logo{
   font-family:fantasy;
 
 }
+
 
 /* *****************************PLUGIN*/
 .card-carousel {
@@ -178,11 +170,24 @@ border: solid grey 2px;
   font-size: 3rem;
   font-weight: 300;
   color: #fff;
-
+}
 
   .addDiv{
     background-color: #eee;
     color:white;
+  }
+  /*MEdia queries*/
+  @media  only screen and (min-width:760px) {
+    .txt:hover{
+      transform: scale(1.25);
+      /* z-index: 99; */
+      /* color:white; */
+    background-color: lightgrey;
+    transition-duration: 1s;
+    border: solid grey 2px;
+    /* text-shadow: 2px 2px 2px black; */
+      box-shadow: 2px 4px 10px 0px black;
+    }
   }
 }
 </style>
@@ -200,7 +205,7 @@ border: solid grey 2px;
           <a class="nav-item nav-link " href="#eat">Eateries <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link " href="#AG">AG</a>
           <a class="nav-item nav-link " href="#outdoor">OutDoor Activities</a>
-          <a id = "about" class="nav-item nav-link " href="#about">about</a>
+          <a id = "about" class="nav-item nav-link " href="createAday.html">Create A Day</a>
         </div>
       </div>
     </nav>
@@ -365,7 +370,7 @@ border: solid grey 2px;
 
 <hr style="background-color:black;">
 
- <footer class="pt-5">
+ <footer class="">
 
   <p class="d-inline mr-3">&copy;2019|| Dwayne Bynum </p>
   <a href="#top" class="  fa fa-facebook"></a>
@@ -377,9 +382,7 @@ border: solid grey 2px;
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
-        crossorigin="anonymous">
+  
 </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
