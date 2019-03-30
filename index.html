@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="styles.css">
   </head>
 <style media="screen">
+body{
+  background-image: url('arrowhead.svg');
+}
+
 ul{
 list-style: none;}
 
@@ -65,117 +69,10 @@ hr{
 
 }
 
-
-/* *****************************PLUGIN*/
-.card-carousel {
-  display: flex;
-  /* border: solid red 1px; */
-  justify-content: center;
-  position: relative;
+.selected:hover {
+  text-decoration: underline;
 }
 
-.card-carousel .my-card {
-  line-height: 2;
-  height: 20rem;
-  width: 12rem;
-  padding:  2rem 0;
-  position: relative;
-  z-index: 1;
-  -webkit-transform: scale(0.6) translateY(-2rem);
-  transform: scale(0.6) translateY(-2rem);
-  opacity: 0;
-  cursor: pointer;
-  pointer-events: none;
-  background: #2e5266;
-  background: linear-gradient(to top, #2e5266, #6e8898);
-  transition: 1s;
-}
-
-.card-carousel .my-card:after {
-  content: '';
-  position: absolute;
-  height: 2px;
-  width: 100%;
-  border-radius: 100%;
-  background-color: rgba(0,0,0,0.3);
-  bottom: -5rem;
-  -webkit-filter: blur(4px);
-  filter: blur(4px);
-}
-
-.card-carousel .my-card.active {
-  z-index: 3;
-  -webkit-transform: scale(1) translateY(0) translateX(0);
-  transform: scale(1) translateY(0) translateX(0);
-  opacity: 1;
-  pointer-events: auto;
-  transition: 1s;
-}
-
-.card-carousel .my-card.prev, .card-carousel .my-card.next {
-  z-index: 2;
-  -webkit-transform: scale(0.8) translateY(-1rem) translateX(0);
-  transform: scale(0.8) translateY(-1rem) translateX(0);
-  opacity: 0.6;
-  pointer-events: auto;
-  transition: 1s;
-}
-
-/*********CUSTOM CASROSEL CSS**********/
-.card-carousel .my-card:nth-child(0):before {
-  content: '0';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  font-size: 3rem;
-  font-weight: 300;
-  color: #fff;
-}
-
-.card-carousel .my-card:nth-child(1):before {
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  font-size: 3rem;
-  font-weight: 300;
-  color: #fff;
-}
-
-.card-carousel .my-card:nth-child(2):before {
-
-
-  position: absolute;
-
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  font-size: 3rem;
-  font-weight: 300;
-  color: #fff;
-}
-
-.card-carousel .my-card:nth-child(3):before {
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  font-size: 3rem;
-  font-weight: 300;
-  color: #fff;
-}
-
-  .addDiv{
-    background-color: #eee;
-    color:white;
-  }
   /*MEdia queries*/
   @media  only screen and (min-width:760px) {
     .txt:hover{
@@ -238,7 +135,7 @@ hr{
       <div class="card txt" >
   <img class="card-img-top rounded" src="chairs.jpg" alt="Card image cap">
   <div class="card-body">
-    <p class=" card-text lead">Restaurants</p>
+    <h4 class=" card-text">Restaurants</h4>
   </div>
 </div>
   <!--***********CARD**********-->
@@ -249,7 +146,7 @@ hr{
       <div class="card txt" >
   <img class="card-img-top rounded" src="beer.jpg" alt="Card image cap">
   <div class="card-body">
-    <p class="  card-text lead"> Bars</p>
+    <h4 class="card-text"> Bars</h4>
   </div>
 </div>
   <!--***********CARD**********-->
@@ -315,13 +212,10 @@ hr{
 </div>
 <div class="container-fluid d-flex flex-column align-items-end p-md-0">
   <!--Move the button to the right side of ther screen-->
-  <button class="  btn btn-info btn-md  mb-5"  data-toggle="collapse" data-target="#stores" aria-expanded="false" aria-controls="stores"type="button" name="button">Take a trip to exclusive Distributors dropdown button</button>
-  <div class = "w-100 border border-danger collapse mb-5 p-5 text-center" id="stores">
-    <h1 class="p-5">Popular Aspen dispensaries </h1>
-    <video src="" controls="">
-        <source src="https://" type="video/">
-    </video>
-
+  <button class="  btn btn-info btn-md  mb-5"  data-toggle="collapse" data-target="#stores" aria-expanded="false" aria-controls="stores"type="button" name="button">See what Aspen dispensaries have to offer</button>
+  <div class = "w-100 collapse mb-5 p-5 text-center" id="stores">
+    <h1 class="p-5 text-muted"> Aspen Dispensaries </h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/9eh6-d1fQTQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 </div>
 
@@ -338,33 +232,36 @@ hr{
 
 
 
-<div class=" text-center container card-carousel ">
+<div class=" adv-opts text-center container ">
+<div class="row">
+  <div class=" selected outdoor-adv col border-left border-dark">
 
-<div class=" my-card">
+    <h4 class="mb-3">Be One With Nature </h4>
+    <!-- <p class="lead">(Nature hikes eco-friendly stuff)</p> -->
 
-  <h4 class="mb-3">One With Nature </h4>
-  <p class="lead">(Nature hikes eco-friendly stuff)</p>
+  </div>
+
+  <div class="col border-left border-dark">
+    <h4>Feed your adventurous side</h4>
+
+<!--
+    <ul >
+      <li class="lead">Snow Boarding</li>
+      <li class="lead">Skiing</li>
+      <li class="lead">Free Climbing</li>
+    </ul> -->
+  </div>
+
+  <div class="col  border-right border-left border-dark">
+
+     <h4>inner City events</h4>
+    <!-- <p class="lead ">Community Events</p> -->
+  </div>
+</div>
 
 </div>
 
-<div class="my-card">
-  <h4>Feed your adventurous side</h4>
-
-
-  <ul >
-    <li class="lead">Snow Boarding</li>
-    <li class="lead">Skiing</li>
-    <li class="lead">Free Climbing</li>
-  </ul>
-</div>
-
-<div class="  my-card">
-
-   <h4>City events</h4>
-  <p class="lead ">Community Events</p>
-</div>
-</div>
-
+<!--END Carousel plugin-->
 
 
 
@@ -381,91 +278,20 @@ hr{
 
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-
-</script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
     <script type="text/javascript">
 
-    $num = $('.my-card').length;
+    var $div = $('.outdoor-adv');
+    var $advOpt = $('.adv-opts');
+    $('.adv-opts div').on('mouseover',function(event){
+      $(event.target).addClass('selected');
+    });
+    $($advOpt).on('mouseout',function(event){
+      $('.adv-opts div').removeClass('selected');
+    });
 
-$even = $num / 2;
-
-$odd = ($num + 1) / 2;
-
-
-
-if ($num % 2 == 0) {
-
-  $('.my-card:nth-child(' + $even + ')').addClass('active');
-
-  $('.my-card:nth-child(' + $even + ')').prev().addClass('prev');
-
-  $('.my-card:nth-child(' + $even + ')').next().addClass('next');
-
-} else {
-
-  $('.my-card:nth-child(' + $odd + ')').addClass('active');
-
-  $('.my-card:nth-child(' + $odd + ')').prev().addClass('prev');
-  $('.my-card:nth-child(' + $odd + ')').next().addClass('next');
-
-}
-
-
-
-$('.my-card').click(function() {
-
-  $slide = $('.active').width();
-
-  console.log($('.active').position().left);
-
-
-
-  if ($(this).hasClass('next')) {
-
-    $('.card-carousel').stop(false, true).animate({left: '-=' + $slide});
-
-  } else if ($(this).hasClass('prev')) {
-
-    $('.card-carousel').stop(false, true).animate({left: '+=' + $slide});
-
-  }
-
-
-
-  $(this).removeClass('prev next');
-
-  $(this).siblings().removeClass('prev active next');
-
-
-
-  $(this).addClass('active');
-
-  $(this).prev().addClass('prev');
-
-  $(this).next().addClass('next');
-
-});
-// Keyboard nav
-
-$('html body').keydown(function(e) {
-
-  if (e.keyCode == 37) { // left
-
-    $('.active').prev().trigger('click');
-
-  }
-
-  else if (e.keyCode == 39) { // right
-
-    $('.active').next().trigger('click');
-
-  }
-
-});
 
 
     </script>
