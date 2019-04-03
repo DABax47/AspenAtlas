@@ -1,0 +1,75 @@
+
+body{
+  background-image: url('../svg/arrowhead.svg');
+}
+
+ul{
+list-style: none;}
+
+*
+{
+  margin:0;
+  padding: 0;
+}
+hr{
+  margin: 150px 0 0 0;
+  background-color: grey;
+}
+.adv{
+  margin-bottom: 3.25em;
+}
+.rule{
+  margin:100px 0;
+}
+  .col-borders{
+    border-right:solid black 4px;
+    border-left:solid black 4px;
+  }
+  .greens-link,a{
+    color: black;
+  }
+
+  .greens-link:hover,a:hover {
+  text-decoration: underline;
+  color:black;
+
+}
+.img-div{
+  background-image: url(../images/deck.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.title{
+  text-shadow: 3px 5px 1px black;
+}
+.adventures{
+  border:inset grey 1px;
+    border-radius: 25px;
+    line-height: 2;
+
+
+}
+
+.logo{
+  font-family:fantasy;
+
+}
+
+
+
+  /*MEdia queries*/
+  @media  only screen and (min-width:760px) {
+    .txt:hover{
+      transform: scale(1.25);
+      /* z-index: 99; */
+      /* color:white; */
+    background-color: lightgrey;
+    transition-duration: 1s;
+    border: solid grey 2px;
+    /* text-shadow: 2px 2px 2px black; */
+      box-shadow: 2px 4px 10px 0px black;
+    }
+  }
+}

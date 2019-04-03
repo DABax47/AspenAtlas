@@ -4,90 +4,14 @@
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aspen Colorado</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel = "stylesheet" href="NORMALIZE/normalize.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+<!--jquery cdn-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   </head>
-<style media="screen">
-body{
-  background-image: url('arrowhead.svg');
-}
 
-ul{
-list-style: none;}
-
-*
-{
-  margin:0;
-  padding: 0;
-}
-hr{
-  margin: 150px 0 0 0;
-  background-color: grey;
-}
-.adv{
-  margin-bottom: 3.25em;
-}
-.rule{
-  margin:100px 0;
-}
-  .col-borders{
-    border-right:solid black 4px;
-    border-left:solid black 4px;
-  }
-  .greens-link{
-    color: black;
-  }
-
-  .greens-link:hover {
-  text-decoration: underline;
-  color:black;
-
-}
-.img-div{
-  background-image: url(deck.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-}
-.title{
-  text-shadow: 3px 5px 1px black;
-}
-.adventures{
-  border:inset grey 1px;
-    border-radius: 25px;
-    line-height: 2;
-
-
-}
-
-.logo{
-  font-family:fantasy;
-
-}
-
-.selected:hover {
-  text-decoration: underline;
-}
-
-  /*MEdia queries*/
-  @media  only screen and (min-width:760px) {
-    .txt:hover{
-      transform: scale(1.25);
-      /* z-index: 99; */
-      /* color:white; */
-    background-color: lightgrey;
-    transition-duration: 1s;
-    border: solid grey 2px;
-    /* text-shadow: 2px 2px 2px black; */
-      box-shadow: 2px 4px 10px 0px black;
-    }
-  }
-}
-</style>
   <body>
     <!-- *****************
   ***********************
@@ -132,23 +56,26 @@ hr{
   <div class="row text-center  mb-5">
     <div class="col-md-4 mx-auto  mb-4">
       <!--***********CARD**********-->
+      <a href="https://theculturetrip.com/north-america/usa/colorado/articles/the-10-best-restaurants-in-aspen-co/">
       <div class="card txt" >
-  <img class="card-img-top rounded" src="chairs.jpg" alt="Card image cap">
+  <img class="card-img-top rounded" src="images/chairs.jpg" alt="Card image cap">
   <div class="card-body">
     <h4 class=" card-text">Restaurants</h4>
   </div>
 </div>
+</a>
   <!--***********CARD**********-->
 
     </div>
     <div class="col-md-4 mx-auto">
         <!--***********CARD**********-->
-      <div class="card txt" >
-  <img class="card-img-top rounded" src="beer.jpg" alt="Card image cap">
+    <a href="https://www.aspensojo.com/articles/2017/11/18/the-best-bars-in-aspen">  <div class="card txt" >
+  <img class="card-img-top rounded" src="images/beer.jpg" alt="Card image cap">
   <div class="card-body">
-    <h4 class="card-text"> Bars</h4>
+    <h4 class="card-text "> Bars</h4>
   </div>
 </div>
+</a>
   <!--***********CARD**********-->
 
     </div>
@@ -212,10 +139,10 @@ hr{
 </div>
 <div class="container-fluid d-flex flex-column align-items-end p-md-0">
   <!--Move the button to the right side of ther screen-->
-  <button class="  btn btn-info btn-md  mb-5"  data-toggle="collapse" data-target="#stores" aria-expanded="false" aria-controls="stores"type="button" name="button">See what Aspen dispensaries have to offer</button>
-  <div class = "w-100 collapse mb-5 p-5 text-center" id="stores">
+  <button class="  btn btn-info btn-md  mb-5 "  data-toggle="collapse" data-target="#stores" aria-expanded="false" aria-controls="stores"type="button" name="button">See what Aspen dispensaries have to offer</button>
+  <div class = "p-0  container-fluid collapse mb-5 text-center" id="stores">
     <h1 class="p-5 text-muted"> Aspen Dispensaries </h1>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/9eh6-d1fQTQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="container" height="250rem"src="https://www.youtube.com/embed/9eh6-d1fQTQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 </div>
 
@@ -234,14 +161,14 @@ hr{
 
 <div class=" adv-opts text-center container ">
 <div class="row">
-  <div class=" selected outdoor-adv col border-left border-dark">
+  <div class=" p-1 selected outdoor-adv col border-left border-dark">
 
     <h4 class="mb-3">Be One With Nature </h4>
     <!-- <p class="lead">(Nature hikes eco-friendly stuff)</p> -->
 
   </div>
 
-  <div class="col border-left border-dark">
+  <div class="p-1 col border-left border-dark">
     <h4>Feed your adventurous side</h4>
 
 <!--
@@ -252,7 +179,7 @@ hr{
     </ul> -->
   </div>
 
-  <div class="col  border-right border-left border-dark">
+  <div class="col p-1 border-right border-left border-dark">
 
      <h4>inner City events</h4>
     <!-- <p class="lead ">Community Events</p> -->
@@ -278,23 +205,8 @@ hr{
 
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-
-    var $div = $('.outdoor-adv');
-    var $advOpt = $('.adv-opts');
-    $('.adv-opts div').on('mouseover',function(event){
-      $(event.target).addClass('selected');
-    });
-    $($advOpt).on('mouseout',function(event){
-      $('.adv-opts div').removeClass('selected');
-    });
-
-
-
-    </script>
     <script type="text/javascript">
 
     </script>
