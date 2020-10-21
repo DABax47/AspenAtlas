@@ -2,179 +2,139 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aspen Colorado</title>
+    <title>Dwayne B. WebDev</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel = "stylesheet" href="NORMALIZE/normalize.css">
+
     <link rel="stylesheet" href="css/styles.css">
   </head>
 
   <body>
-    <!-- *****************
-  ***********************
-************NAVBAR********** -->
-    <nav class="navbar navbar-expand-md  navbar-dark bg-dark sticky-top">
-      <a class="navbar-brand logo" href="#">D</a>
+<!-- NAV -->
+    <nav class="navbar navbar-expand-md  navbar-light bg-light sticky-top">
+      <a class="navbar-brand logo" href="#">
+    D
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse  " id="navbarNavAltMarkup">
         <div id="navB" class="navbar-nav  w-100 justify-content-around ">
-          <a class="nav-item nav-link " href="#eat">Eateries <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link " href="#AG">AG</a>
-          <a class="nav-item nav-link " href="#outdoor">OutDoor Activities</a>
-          <a id = "about" class="nav-item nav-link " href="subpages/createAday.html">Create A Day</a>
+          <a class="nav-item nav-link menu" href="#project" >Projects</a>
+          <a class="nav-item nav-link menu " href="#contact" >Contact</a>
+
         </div>
       </div>
     </nav>
-    <!-- *****************
-  ***********************
-************NAVBAR********** -->
+<!--END NAV -->
 
-<!-- *****************
-***********************
-************jumboTron********** -->
-<div class=" img-div jumbotron jumbotron-fluid bg-dark">
-  <div id="cnt-div"class="  container text-center text-white">
-    <h1 id='aspen' class=" title display-3 ">The Aspen Atlas</h1>
-  <p id='title'class="title lead">a practical guide for the Adventurous Spirit</p>
+<!-- Welcome jumbotron -->
+<div class=" img-div jumbotron jumbotron-fluid d-flex  align-items-center">
+  <div id="cnt-div"class="  container text-center text-white  ">
+    <h1 id='welcome' class=" title display-3 ">Dwayne Bynum</h1>
+  <ul id='title'class="title lead">
+    <li>Full Stack Web Development</li>
+    <li>Website Managment</li>
+    <li>Wordpress Development</li>
+    <li>Consulting</li>
+    <li>Mentorship and Tutoring</li>
+
+  </ul>
   </div>
 </div>
-<!-- *****************
-***********************
-************jumboTron********** -->
+<!-- END Welcome jumbotron -->
+<!-- project container -->
+<div id="project" class='pt-1 proj-container'>
+  <h2  class="text-muted text-center p-5 my-5">PROJECTS</h2>
+
+  <div class="container-fluid proj-cnt">
+    <a href="https://dabax47.github.io/todo/" target="_blank">  <div id="circle-1" class="circle ">
+
+      </div></a>
+    <a href="https://dabax47.github.io/rsvp/" target="_blank">     <div id="circle-2"class="circle ">
+
+          </div></a>
+    <a href="https://wc-fc.netlify.app/" target="_blank"> <div id="circle-3" class="circle ">
+
+      </div></a>
+    <a href="https://evening-shelf-93942.herokuapp.com/" target="_blank"> <div id="circle-4" class="circle ">
+
+      </div></a>
+    <a href="./html/comingsoon.html" target="_blank"><div  id="circle-5"class="circle coming  text-muted">
+
+     </div></a>
+    <a href="./html/comingsoon.html"  target="_blank">   <div id="circle-6" class="circle coming text-muted">
+
+       </div>
+    </a>
 
 
-<!-- *****************
-***********************
-************container********** -->
-<h2 id="eat" class="text-muted text-center p-5 my-5">Top Notch Eateries</h2>
-<div  class="container mt-5 ">
-  <div class="row text-center  mb-5">
-    <div class="col-md-4 mx-auto  mb-4">
-      <!--***********CARD**********-->
-      <a href="https://theculturetrip.com/north-america/usa/colorado/articles/the-10-best-restaurants-in-aspen-co/">
-      <div class="card txt" >
-  <img class="card-img-top rounded" src="images/chairs.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h4 class=" card-text">Restaurants</h4>
-  </div>
-</div>
-</a>
-  <!--***********CARD**********-->
-
-    </div>
-    <div class="col-md-4 mx-auto">
-        <!--***********CARD**********-->
-    <a href="https://www.aspensojo.com/articles/2017/11/18/the-best-bars-in-aspen">  <div class="card txt" >
-  <img class="card-img-top rounded" src="images/beer.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h4 class="card-text "> Bars</h4>
-  </div>
-</div>
-</a>
-  <!--***********CARD**********-->
-
-    </div>
 
 
-  </div>
+
+
 
 
 </div>
+</div>
+
+<!--END  project container -->
+
+
 
 
 <hr>
 
+<!-- Contact container -->
+<div class="p-5 my-5 contact d-flex flex-column justify-content-center">
+  <h2 id="contact" class="text-muted  py-5  text-center">CONTACT </h2>
 
 
-<h2 id="AG" class="text-muted px-5 py-3 mt-5 text-center">Aspen Greens </h2>
-<div class="container ">
 
-<div class="row">
-<div class="col-md-12 mb-5">
-  <p>Each dispensary ensures responsible lab testing for the safety of our
-    member patients through PharmLabs, a Southern California medical
-     marijuana lab testing and analytic service. In this manner we are
-     able to provide
-     only the highest quality, safe and potent product to our consumers.</p>
+    <form
+      action="https://formspree.io/f/xvovkekr"
+      method="POST"
+      class="align-self-center pt-3 d-flex flex-column justify-content-center"
+    >
+      <label>
+       email:
+        <input placeholder='email' type="text" name="_replyto">
+      </label>
+      <label>
+        message:
+        <textarea placeholder="Hey Dwayne! How's it going?"name="message"></textarea>
+      </label>
+
+
+
+      <button class="btn" id="submit-btn" type="submit">Send</button>
+    </form>
 
 
 
 </div>
-<div class="col-md-5 mx-auto col-borders  mb-5">
-<a class="greens-link d-inline-block " target="_blank" href="https://cannabismaven.io/theweedblog/growing/the-top-8-marijuana-strains-in-2018-8Bjy7qx73E64CU4RhuAKEw/">
-  <h1 class="w-auto">Strain of The Month</h1>
-</a>
-  <p><em>Jack Herer:</em></p>
-  <p> boasts an earthy pine and citrusy taste that is
-    easily recognizable and provides uses with subtle
-    cerebral effects that aren’t overwhelming. Also,
-    this particular strain is perfect for those inexperienced
-    with marijuana, medical marijuana patients, or for those
-    seeking a strain that can be used during the day if you’re
-    fairly active.</p>
-</div>
-<div class="col-md-5 col-borders mx-auto mb-5">
-  <a class="greens-link d-inline-block" target="_blank"  href="https://www.leafly.com/news/strains-products/7-cannabis-gadgets-for-high-tech-stashes">
-     <h1>Top Stories and Tech</h1>
-   </a>
 
-  <p><em>The Otto: by Bannana Bros</em></p>
-  <p>One part grinder, one part rolling machine, this
-     clever number by Banana Bros is taking the cannabis
-      tech world by storm. The OTTO contains an innovative
-      design that can roll up to 30 joints in one charge and
-       is both odor-proof and spill-proof. Perfect for arthritic
-       hands or a toke on the go, this gadget will be a permanent
-       fixture in your cannabis
-     repertoire. Keep an eye out for a Leafly employee vs.
-      OTTO joint-off!</p>
+<!-- END contact container -->
 
-</div>
-</div>
-</div>
-<div class="container-fluid d-flex flex-column align-items-end p-md-0">
-  <!--Move the button to the right side of ther screen-->
-  <button class="  btn btn-info btn-md  mb-5 "  data-toggle="collapse" data-target="#stores" aria-expanded="false" aria-controls="stores"type="button" name="button">See what Aspen dispensaries have to offer</button>
-  <div class = "container-fluid collapse mb-5 text-center" id="stores">
-    <h1 class=" text-muted "> Aspen Dispensaries </h1>
-    <iframe   height="150rem" class="col-10"src="https://www.youtube.com/embed/9eh6-d1fQTQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-</div>
+<hr class="m-0 p-0" style="background-color:black;">
 
-<hr class="rule">
+ <footer >
+
+  <p class="d-inline mr-3">&copy;2020|| Dwayne Bynum </p>
+  <a href="https://www.linkedin.com" class="  fa fa-linkedin"></a>
+    <a href="https://www.linkedin.com" class="  fa fa-github"></a>
+      <a href="https://www.linkedin.com" class="fa fa-stack-overflow"></a>
 
 
-
-<!-- *****************
-***********************
-************OUT DOOR ADVENTURES********** -->
-
-<h2 id="outdoor"class="text-muted mb-5 adv text-center">Outdoor Adventures</h2>
-
-  <p class=" text-center lead">Coming soon</p>
-
-
-
-<hr style="background-color:black;">
-
- <footer class="">
-
-  <p class="d-inline mr-3">&copy;2019|| Dwayne Bynum </p>
-  <a href="#top" class="  fa fa-facebook"></a>
-  <a href="#top" class="mr-1 fa fa-twitter"></a><a href="#top" class=" mr-2 fa fa-instagram"></a>
-  <!-- Add font awesome icons -->
 
 </footer>
 
-
-<!--jquery cdn-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="text/javascript">
+    <script type="text/javascript" src="./scripts/app.js">
 
     </script>
   </body>

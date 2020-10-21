@@ -1,75 +1,203 @@
 
 body{
-  background-image: url('../svg/arrowhead.svg');
-}
-
-ul{
-list-style: none;}
-
-*
-{
-  margin:0;
-  padding: 0;
-}
-hr{
-  margin: 150px 0 0 0;
-  background-color: grey;
-}
-.adv{
-  margin-bottom: 3.25em;
-}
-.rule{
-  margin:100px 0;
-}
-  .col-borders{
-    border-right:solid black 4px;
-    border-left:solid black 4px;
+  font-family: sans-serif, serif, helvetica;
   }
-  .greens-link,a{
-    color: black;
+  ul{
+list-style: none;
   }
-
-  .greens-link:hover,a:hover {
-  text-decoration: underline;
-  color:black;
-
+nav{
+  box-shadow: 1px 1px 7px;
 }
+
+
 .img-div{
-  background-image: url(../images/deck.jpg);
+
+  background:linear-gradient(-50deg, rgba(32,79,98,.4), rgba(32,79,98,.8)), url(../images/office.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
   height: 100vh;
+  min-height:100%;
+  background-size:cover;
 }
-.title{
-  text-shadow: 3px 5px 1px black;
+#title{
+  padding: 0;
 }
-.adventures{
-  border:inset grey 1px;
-    border-radius: 25px;
-    line-height: 2;
-
-
-}
-
-.logo{
-  font-family:fantasy;
-
+#title li:nth-child(even){
+  border-bottom: solid white .5px;
+  border-top: solid white .5px;
 }
 
+.proj{
+  height: 65vh;
+    width: 100%;
+}
+.contact{
+  height: 47vh;
+    width: 100%;
+}
+.circle{
 
+  margin:25px;
+}
+.proj-cnt{
 
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+.circle{
+
+  border-radius:50px;
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  background-image: url('../images/office.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#circle-1{
+  background-image: url('../images/todo.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#circle-2{
+  background-image: url('../images/rsvp.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#circle-3{
+  background-image: url('../images/vs.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#circle-4{
+  background-image: url('../images/Compressi.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#circle-5{
+  background-image: url('../images/proj.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#circle-6{
+  background-image: url('../images/proj.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.coming::after{
+  content: 'Coming Soon';
+  position: relative;
+  top:-22px;
+  }
+a:hover{
+  text-decoration: none;
+
+}
+
+#submit-btn{
+  border-radius: 50px;
+  transition: .3s;
+
+}
+#submit-btn:hover{
+  background-color: #5a9eb9;
+}
   /*MEdia queries*/
-  @media  only screen and (min-width:760px) {
-    .txt:hover{
-      transform: scale(1.25);
-      /* z-index: 99; */
-      /* color:white; */
-    background-color: lightgrey;
-    transition-duration: 1s;
-    border: solid grey 2px;
-    /* text-shadow: 2px 2px 2px black; */
-      box-shadow: 2px 4px 10px 0px black;
+  @media  only screen and (min-width:426px) {
+    *
+    {
+      margin:0;
+      padding: 0;
+    }
+    ul{
+    list-style: none;}
+    .menu{
+    transition: .2s;
+    }
+    .menu:hover{
+    font-size: 1.25em;
+text-shadow: 1px 1px 1px lightblue;
+    animation-name: menu;
+    animation-duration: .8s;
+    animation-timing-function: ease;
+    }
+    .img-div{
+      background:linear-gradient(-50deg, rgba(32,79,98,.4), rgba(32,79,98,.8)), url(../images/office.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100vh;
+      min-height:100%;
+      background-size:cover;
+    }
+    #title{
+display: flex;
+justify-content: center;
+      }
+      #title li:nth-child(even){
+        border-right: solid white .5px;
+        border-left: solid white .5px;
+        border-bottom: none;
+        border-top: none;
+      }
+#title li{
+padding: 0px 10px 0px 10px;
+animation-name: services;
+animation-duration: .8s;
+animation-timing-function: ease-in;
+  }
+  /* KEYFRAMES */
+  @keyframes menu {
+    0%{
+        text-shadow: 10px 10px 1px lightblue;
+
+    }
+
+    100%{
+      text-shadow: 1px 1px 1px lightblue;
     }
   }
+  @keyframes services {
+0%{
+  opacity: .0;
+
 }
+50%{
+
+  }
+100%{
+  opacity: 1;
+}
+  }
+    .proj{
+      height: 65vh;
+        width: 100%;
+    }
+    .contact{
+      height: 47vh;
+        width: 100%;
+    }
+
+    .circle{
+
+      border-radius:50px;
+      height: 100px;
+      width: 100px;
+
+    transition:.3s;
+    }
+
+    .circle:hover{
+transform: scale(2);
+    border-radius: 25px;
+
+    }
+
+  } */
