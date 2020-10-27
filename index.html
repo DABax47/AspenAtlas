@@ -1,141 +1,164 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
   <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dwayne B. WebDev</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./NORMALIZE/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
   </head>
 
   <body>
-<!-- NAV -->
-    <nav class="navbar navbar-expand-md  navbar-light bg-light sticky-top">
-      <a class="navbar-brand logo" href="#">
-    D
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse  " id="navbarNavAltMarkup">
-        <div id="navB" class="navbar-nav  w-100 justify-content-around ">
-          <a class="nav-item nav-link menu" href="#project" >Projects</a>
-          <a class="nav-item nav-link menu " href="#contact" >Contact</a>
 
+    <section id="content">
+
+
+      <!-- NAV -->
+      <nav class="navbar navbar-expand-md  navbar-light bg-light sticky-top">
+        <p class=" logo">
+          Dwayne B.
+        </p>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon ham"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav nav">
+            <a class="nav-item nav-link " href="#project-section">Projects</a>
+            <a class="nav-item nav-link " href="#contact-section">Contact</a>
+          </div>
         </div>
-      </div>
-    </nav>
-<!--END NAV -->
-
-<!-- Welcome jumbotron -->
-<div class=" img-div jumbotron jumbotron-fluid d-flex  align-items-center">
-  <div id="cnt-div"class="  container text-center text-white  ">
-    <h1 id='welcome' class=" title display-3 ">Dwayne Bynum</h1>
-  <ul id='title'class="title lead">
-    <li>Full Stack Web Development</li>
-    <li>Website Managment</li>
-    <li>Wordpress Development</li>
-    <li>Consulting</li>
-    <li>Mentorship and Tutoring</li>
-
-  </ul>
-  </div>
-</div>
-<!-- END Welcome jumbotron -->
-<!-- project container -->
-<div id="project" class='pt-1 proj-container'>
-  <h2  class="text-muted text-center p-5 my-5">PROJECTS</h2>
-
-  <div class="container-fluid proj-cnt">
-    <a href="https://dabax47.github.io/todo/" target="_blank">  <div id="circle-1" class="circle ">
-
-      </div></a>
-    <a href="https://dabax47.github.io/rsvp/" target="_blank">     <div id="circle-2"class="circle ">
-
-          </div></a>
-    <a href="https://wc-fc.netlify.app/" target="_blank"> <div id="circle-3" class="circle ">
-
-      </div></a>
-    <a href="https://evening-shelf-93942.herokuapp.com/" target="_blank"> <div id="circle-4" class="circle ">
-
-      </div></a>
-    <a href="./html/comingsoon.html" target="_blank"><div  id="circle-5"class="circle coming  text-muted">
-
-     </div></a>
-    <a href="./html/comingsoon.html"  target="_blank">   <div id="circle-6" class="circle coming text-muted">
-
-       </div>
-    </a>
+      </nav>
+      <!--END NAV -->
+      <main>
 
 
+        <!--Welcome Section  -->
+        <section id="welcome">
+          <h1>Thanks for checking out my work!</h1>
+        </section>
+
+        <!-- project section -->
+        <section id="project-section">
+
+          <h2>Projects</h2>
+          <div class="project-card-container">
+            <div class="project-1 project-cards">
+              <img class="project-1-image img" src="./images/todo.png" alt="">
+              <div class="project-1-details project-slider">
+                <h3>Todo List</h3>
+                <h3>Built With:</h3>
+                <p>React</p>
+                <h3>Description:</h3>
+                <p>
+                  A React app that takes user input and displays the items in a list where items can be filtered, removed or “checked off” as completed.
+                </p>
+              </div>
+            </div>
+            <div class="project-1 project-cards">
+              <img class="project-1-image img" src="./images/vs.png" alt="">
+              <div class="project-1-details project-slider">
+                <h3>Ram-House-VS</h3>
+                <h3>Built With:</h3>
+                <ul>
+                  <li>React</li>
+                  <li>React-Router</li>
+                </ul>
+                <h3>Description:</h3>
+                <p>
+                  A React app that takes user input and displays the items in a list where items can be filtered, removed or “checked off” as completed.
+                </p>
+              </div>
+            </div>
+            <div class="project-1 project-cards">
+              <img class="project-1-image img" src="./images/compressi.jpg" alt="">
+              <div class="project-1-details project-slider">
+                <h3>Todo List</h3>
+                <h3>Built With:</h3>
+                <p>React</p>
+                <h3>Description:</h3>
+                <p>
+                  A React app that takes user input and displays the items in a list where items can be filtered, removed or “checked off” as completed.
+                </p>
+              </div>
+            </div>
+            <div class="project-1 project-cards">
+              <img class="project-1-image img" src="./images/proj.jpg" alt="">
+              <div class="project-1-details project-slider">
+                <h3>Todo List</h3>
+                <h3>Built With:</h3>
+                <p>React</p>
+                <h3>Description:</h3>
+                <p>
+                  A React app that takes user input and displays the items in a list where items can be filtered, removed or “checked off” as completed.
+                </p>
+              </div>
+            </div>
+            <div class="project-1 project-cards">
+              <img class="project-1-image img" src="./images/proj.jpg" alt="">
+              <div class="project-1-details project-slider">
+                <h3>Todo List</h3>
+                <h3>Built With:</h3>
+                <p>React</p>
+                <h3>Description:</h3>
+                <p>
+                  A React app that takes user input and displays the items in a list where items can be filtered, removed or “checked off” as completed.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- contact section -->
+        <section id="contact-section">
+
+          <h2>CONTACT </h2>
+          <div class="form-container">
+            <form action="https://formspree.io/f/xvovkekr" method="POST" class="align-self-center pt-3 d-flex flex-column justify-content-center">
+              <label>
+                Email:
+                <input placeholder='email@somewhere.com' type="text" name="_replyto">
+              </label>
+              <label>
+                Message:
+                <textarea placeholder="Hey Dwayne!" name="message"></textarea>
+              </label>
+              <button class="btn" id="submit-btn" type="submit">Send</button>
+            </form>
+          </div>
+          <div class="contact-social-links">
+            <a class=" social-link " href="https://www.linkedin.com/in/dwayne-bynum-4832771b1/" target="_blank">
+              <div class="gh">
+
+              </div>
+            </a>
+            <a class=" social-link" href="https://github.com/DABax47" target="_blank">
+              <div class="link">
+
+              </div>
+            </a>
+          </div>
+        </section>
+      </main>
+      <footer>
+
+        <p class="d-inline mr-3">&copy;2020|| Dwayne B. </p>
+        <a href="https://www.linkedin.com/in/dwayne-bynum-4832771b1/" class="   mt-md-1 mr-md-2 fa fa-linkedin" target="_blank"></a>
+        <a href="https://github.com/DABax47" class="  mt-md-1 fa fa-github" target="_blank"></a>
 
 
 
 
-
-
-</div>
-</div>
-
-<!--END  project container -->
-
-
-
-
-<hr>
-
-<!-- Contact container -->
-<div class="p-5 my-5 contact d-flex flex-column justify-content-center">
-  <h2 id="contact" class="text-muted  py-5  text-center">CONTACT </h2>
-
-
-
-    <form
-      action="https://formspree.io/f/xvovkekr"
-      method="POST"
-      class="align-self-center pt-3 d-flex flex-column justify-content-center"
-    >
-      <label>
-       email:
-        <input placeholder='email' type="text" name="_replyto">
-      </label>
-      <label>
-        message:
-        <textarea placeholder="Hey Dwayne!"name="message"></textarea>
-      </label>
-
-
-
-      <button class="btn" id="submit-btn" type="submit">Send</button>
-    </form>
-
-
-
-</div>
-
-<!-- END contact container -->
-
-<hr class="m-0 p-0" style="background-color:black;">
-
- <footer >
-
-  <p class="d-inline mr-3">&copy;2020|| Dwayne Bynum </p>
-  <a href="https://www.linkedin.com/in/dwayne-bynum-4832771b1/" target="_blank" class="  fa fa-linkedin"></a>
-    <a href="https://github.com/DABax47" class="  fa fa-github" target="_blank" ></a>
-    
-
-
-
-</footer>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      </footer>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="./scripts/app.js">
 
-    </script>
   </body>
+
 </html>
