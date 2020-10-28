@@ -256,11 +256,10 @@ a:active, a:visited, a:focus, a:hover {
     align-items: center;
   }
 
-  #title li:nth-child(odd) {
+  /* #title li:nth-child(odd) {
     border-right: solid white .5px;
     border-left: solid white .5px;
-  }
-
+  } */
   #title {
     display: flex;
     text-align: center;
