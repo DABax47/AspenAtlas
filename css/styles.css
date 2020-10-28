@@ -256,19 +256,7 @@ a:active, a:visited, a:focus, a:hover {
     align-items: center;
   }
 
-  /* #welcome h1 {
-    width: 455px;
-    height: 17px;
-    font-weight: normal;
-    font-style: normal;
-    font-family: popRegular;
-    font-size: 25px;
-    line-height: 120%;
-    text-align: center;
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
-  } */
-  #title li:nth-child(even) {
+  #title li:nth-child(odd) {
     border-right: solid white .5px;
     border-left: solid white .5px;
   }
@@ -281,7 +269,7 @@ a:active, a:visited, a:focus, a:hover {
   }
 
   #title li {
-    width: 100%;
+    padding: 0 10px;
   }
 
   #project-section, #contact-section {
