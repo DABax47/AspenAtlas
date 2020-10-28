@@ -269,6 +269,7 @@ a:active, a:visited, a:focus, a:hover {
   }
 
   #title li {
+    height: 100%;
     padding: 0 10px;
   }
 
