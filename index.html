@@ -3,19 +3,18 @@
 
   <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dwayne B. WebDev</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Dwayne B.</title>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./NORMALIZE/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   </head>
 
   <body>
-
     <section id="content">
-
 
       <!-- NAV -->
       <nav class="navbar navbar-expand-md  navbar-light bg-light sticky-top">
@@ -35,10 +34,21 @@
       <!--END NAV -->
       <main>
 
-
-        <!--Welcome Section  -->
+        <!--Welcome Section -->
         <section id="welcome">
-          <h1>Thanks for checking out my work!</h1>
+
+          <ul id='title' class="title lead">
+            <li>Full Stack Web Development</li>
+            <li>Website Managment</li>
+            <li>Consulting </li>
+            <li>Wordpress Development</li>
+            <li>Mentorship &Tutoring</li>
+
+
+
+          </ul>
+
+
         </section>
 
         <!-- project section -->
@@ -46,69 +56,87 @@
 
           <h2>Projects</h2>
           <div class="project-card-container">
-            <div class="project-1 project-cards">
-              <img class="project-1-image img" src="./images/todo.png" alt="">
+            <div class=" project-cards">
+              <a href="https://dabax47.github.io/todo/" target="_blank">
+                <img class="project-img" src=" ./images/todo.png" alt=" ">
+                <div class="project-1-details project-slider">
+                  <h3>Todo List</h3>
+                  <h3>Built With:</h3>
+                  <p>React</p>
+                  <h3>Description:</h3>
+                  <p>
+                    A simple React App ToDo List
+                    <br> -Items will remain even after window refresh and close
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div class="project-cards">
+              <a href="https://wc-fc.netlify.app/" target="_blank">
+                <img class="project-img " src="./images/vs.png" alt="">
+                <div class="project-1-details project-slider">
+                  <h3>Ram-House-VS</h3>
+                  <h3>Built With:</h3>
+                  <ul>
+                    <li>React</li>
+                    <li>React-Router</li>
+                  </ul>
+                  <h3>Description:</h3>
+                  <p>
+                    Users are shuffled and paired into matches.
+                    select team to determine winner
+                    -on click of the "Generate Match" button matches will be reshuffled for round 2.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <a href="https://evening-shelf-93942.herokuapp.com/" target="_blank">
+              <div class=" project-cards">
+                <img class="project-img " src="./images/compressi.jpg" alt="">
+                <div class="project-1-details project-slider">
+                  <h3>Compressi</h3>
+                  <h3>Built With:</h3>
+                  <p>Express</p>
+                  <h3>Description:</h3>
+                  <p>
+                    Users can drag/drop images and the resulting image file will
+                    be compressed using imgmin. The file will be displayed and availible for download!
+                  </p>
+                </div>
+            </a>
+          </div>
+          <div class=" project-cards">
+            <a href="https://dabax47.github.io/rsvp/" target="_blank">
+              <img class="project-img " src="./images/rsvp.png" alt="">
               <div class="project-1-details project-slider">
-                <h3>Todo List</h3>
+                <h3>Treehouse RSVP Project</h3>
                 <h3>Built With:</h3>
                 <p>React</p>
                 <h3>Description:</h3>
                 <p>
-                  A React app that takes user input and displays the items in a list where items can be filtered, removed or “checked off” as completed.
+                  user input is taken and added
+                  to a list of "invitees"
+                  users can be edited, removed, and confirmed.
+
                 </p>
               </div>
-            </div>
-            <div class="project-1 project-cards">
-              <img class="project-1-image img" src="./images/vs.png" alt="">
+            </a>
+          </div>
+          <div class=" project-cards">
+            <a href="./html/comingsoon.html" target="_blank">
+              <img class="project-img" src="./images/proj.jpg" alt="">
               <div class="project-1-details project-slider">
-                <h3>Ram-House-VS</h3>
+                <h3>MERN based Full Stack App Coming...</h3>
                 <h3>Built With:</h3>
-                <ul>
-                  <li>React</li>
-                  <li>React-Router</li>
-                </ul>
+                <p>MERN Stack</p>
                 <h3>Description:</h3>
                 <p>
-                  A React app that takes user input and displays the items in a list where items can be filtered, removed or “checked off” as completed.
+                  It's gonna be Great!
                 </p>
               </div>
-            </div>
-            <div class="project-1 project-cards">
-              <img class="project-1-image img" src="./images/compressi.jpg" alt="">
-              <div class="project-1-details project-slider">
-                <h3>Todo List</h3>
-                <h3>Built With:</h3>
-                <p>React</p>
-                <h3>Description:</h3>
-                <p>
-                  A React app that takes user input and displays the items in a list where items can be filtered, removed or “checked off” as completed.
-                </p>
-              </div>
-            </div>
-            <div class="project-1 project-cards">
-              <img class="project-1-image img" src="./images/proj.jpg" alt="">
-              <div class="project-1-details project-slider">
-                <h3>Todo List</h3>
-                <h3>Built With:</h3>
-                <p>React</p>
-                <h3>Description:</h3>
-                <p>
-                  A React app that takes user input and displays the items in a list where items can be filtered, removed or “checked off” as completed.
-                </p>
-              </div>
-            </div>
-            <div class="project-1 project-cards">
-              <img class="project-1-image img" src="./images/proj.jpg" alt="">
-              <div class="project-1-details project-slider">
-                <h3>Todo List</h3>
-                <h3>Built With:</h3>
-                <p>React</p>
-                <h3>Description:</h3>
-                <p>
-                  A React app that takes user input and displays the items in a list where items can be filtered, removed or “checked off” as completed.
-                </p>
-              </div>
-            </div>
+            </a>
+          </div>
           </div>
 
         </section>
@@ -116,7 +144,8 @@
         <!-- contact section -->
         <section id="contact-section">
 
-          <h2>CONTACT </h2>
+          <h2>CONTACT
+          </h2>
           <div class="form-container">
             <form action="https://formspree.io/f/xvovkekr" method="POST" class="align-self-center pt-3 d-flex flex-column justify-content-center">
               <label>
@@ -131,26 +160,19 @@
             </form>
           </div>
           <div class="contact-social-links">
-            <a class=" social-link " href="https://www.linkedin.com/in/dwayne-bynum-4832771b1/" target="_blank">
-              <div class="gh">
-
-              </div>
+            <a class=" social-link " href="https://github.com/DABax47" target="_blank">
+              <div class="gh"></div>
             </a>
-            <a class=" social-link" href="https://github.com/DABax47" target="_blank">
-              <div class="link">
-
-              </div>
+            <a class=" social-link" href="https://www.linkedin.com/in/dwayne-bynum-4832771b1/" target="_blank">
+              <div class="link"></div>
             </a>
           </div>
         </section>
       </main>
       <footer>
 
-        <p class="d-inline mr-3">&copy;2020|| Dwayne B. </p>
-        <a href="https://www.linkedin.com/in/dwayne-bynum-4832771b1/" class="   mt-md-1 mr-md-2 fa fa-linkedin" target="_blank"></a>
-        <a href="https://github.com/DABax47" class="  mt-md-1 fa fa-github" target="_blank"></a>
-
-
+        <p class="d-inline mr-3">&copy;2020|| Dwayne B.
+        </p>
 
 
       </footer>
@@ -158,7 +180,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+    <script src="./js/anim.js" type="text/javascript"></script>
   </body>
 
 </html>
