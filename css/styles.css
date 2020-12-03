@@ -304,7 +304,7 @@ a:active, a:visited, a:focus, a:hover {
       1px 1px 1px 0px;
     transition: .4s ease;
     position: static;
-    z-index: 50000;
+    z-index: 1;
   }
 
   .project-cards:hover {
