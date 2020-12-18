@@ -1,0 +1,9 @@
+TODO:
+Add content
+--->About me and my goals/interests etc
+--->Add all links to page
+    • Social Links[Home page]
+    • Project Links[project page]
+--->ADD animated tabs to project cards
+--->Remove green boarder from home page
+--->ADD project descriptions
