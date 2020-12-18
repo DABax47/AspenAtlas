@@ -154,7 +154,6 @@
     filter: opacity();
   }
   .home-content-layer {
-    position: relative;
     z-index: 200;
     height: 100%;
     width: 100%;
@@ -176,10 +175,11 @@
     text-decoration: underline;
   }
   .contact-container {
+    position: relative;
     align-self: flex-end;
     padding: 10% 12.4161787% 0 0;
     text-align: center;
-    font-size: 32px;
+    font-size: 2.375vw;
   }
   .contact-container h2 {
     font-style: normal;
@@ -210,9 +210,7 @@
   i:hover {
     color: #333;
   }
-  .contact-container {
-    position: relative;
-  }
+
   /* interactions */
   .project-card:hover {
     border-radius: 0;

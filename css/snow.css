@@ -8,10 +8,14 @@
     position: absolute;
     /* height: 102.4640349818141px;
     width: 77.37018581250973px; */
-    height: 60%;
-    width: 37%;
-    top: 3%;
-    right: 7%;
+    /* height: 60%;
+    width: 37%; */
+    max-height: 12vh;
+    max-width: 5vw;
+    top: 20%;
+    right: 17%;
+    /* top: 70%;
+    right: 9%; */
   }
   .snow {
     border-radius: 50%;
