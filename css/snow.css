@@ -1,60 +1,62 @@
-html,
-body {
-  margin: 0;
-}
+@media all and (min-width: 190px) {
+  html,
+  body {
+    margin: 0;
+  }
 
-.santa-hat {
-  position: absolute;
-  height: 102.4640349818141px;
-  width: 77.37018581250973px;
-  top: 65%;
-  right: 11%;
-}
-.snow {
-  border-radius: 50%;
-  opacity: 0.8;
-  position: absolute;
-  top: -100vh;
-  right: 25px;
-  animation-name: fall;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  width: 0.5rem;
-  height: 0.5rem;
-  filter: blur(1.5px);
-  background-color: white;
-  box-shadow: 2px 2px 2px;
-  animation-duration: 7s;
-}
-.a {
-  animation-delay: -6s;
-}
-.b {
-  animation-delay: -5.25s;
-}
-.c {
-  animation-delay: -5s;
-}
-.d {
-  animation-delay: -4.9s;
-}
-.e {
-  animation-delay: -1.26s;
-}
-.f {
-  animation-delay: -0.36s;
-}
-.g {
-  animation-delay: -0.85s;
-}
-.h {
-  animation-delay: -0.25s;
-}
-.i {
-  animation-delay: -0.5s;
-}
-@keyframes fall {
-  100% {
-    transform: translateY(198vh);
+  .santa-hat {
+    position: absolute;
+    height: 102.4640349818141px;
+    width: 77.37018581250973px;
+    top: 68%;
+    right: 11%;
+  }
+  .snow {
+    border-radius: 50%;
+    opacity: 0.8;
+    position: absolute;
+    top: -100vh;
+    right: 25px;
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    width: 0.5rem;
+    height: 0.5rem;
+    filter: blur(1.5px);
+    background-color: white;
+    box-shadow: 2px 2px 2px;
+    animation-duration: 7s;
+  }
+  .a {
+    animation-delay: -6s;
+  }
+  .b {
+    animation-delay: -5.25s;
+  }
+  .c {
+    animation-delay: -5s;
+  }
+  .d {
+    animation-delay: -4.9s;
+  }
+  .e {
+    animation-delay: -1.26s;
+  }
+  .f {
+    animation-delay: -0.36s;
+  }
+  .g {
+    animation-delay: -0.85s;
+  }
+  .h {
+    animation-delay: -0.25s;
+  }
+  .i {
+    animation-delay: -0.5s;
+  }
+  @keyframes fall {
+    100% {
+      transform: translateY(198vh);
+    }
   }
 }
