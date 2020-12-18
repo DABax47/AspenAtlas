@@ -210,7 +210,9 @@
   i:hover {
     color: #333;
   }
-
+  .contact-container {
+    position: relative;
+  }
   /* interactions */
   .project-card:hover {
     border-radius: 0;
