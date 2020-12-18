@@ -4,7 +4,7 @@
   }
 } */
 
-@media all and (min-width: 190px) and(orientation:landscape) and(orientation:portrait) {
+@media all and (min-width: 190px) {
   *,
   *::before,
   *::after {
