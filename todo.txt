@@ -1,6 +1,6 @@
 TODO:
 Add content
---->About me and my goals/interests etc
+--->About me and my goals/interests etc [X]
 --->Add all links to page[X]
     • Social Links
     • Project Links
@@ -8,3 +8,23 @@ Add content
 --->Remove green boarder from home page[X]
 --->ADD project descriptions[X]
 --->Create mobile version which will just be a stacked version where the about me comes first
+--->optimize images
+--->minify/uglify files
+
+
+
+MY SKILLS:
+<div class="skills-container">
+  <h2>Skills</h2>
+  <ul>
+    <li>interpersonal Communication</li>
+    <li>writing</li>
+    <li>React.js</li>
+    <li>Express.js</li>
+    <li>Node.js</li>
+    <li>Github</li>
+    <li>Figma</li>
+    <li>Adobe Creative Cloud</li>
+    <li>Responsive Web Design</li>
+  </ul>
+</div>
