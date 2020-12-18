@@ -31,7 +31,7 @@ body,
 }
 
 body {
-  /* overflow: hidden; */
+  overflow: hidden;
   font-family: Montserrat;
   font-style: normal;
   height: 100vh;
@@ -59,7 +59,7 @@ li {
 .project-container {
   height: 100%;
   width: 90%;
-  /* padding: 20px; */
+
   padding: 1.4858841%;
 }
 .project-card {
@@ -67,7 +67,7 @@ li {
   cursor: pointer;
   /* margin-left: 40px; */
   margin-left: 3.5438596%;
-  height: 21.11%;
+  height: 25.11%;
   width: 13.87%;
   border-radius: 15px 15px 15px 15px;
   overflow: hidden;
@@ -103,7 +103,7 @@ li {
   display: flex;
   flex-direction: column;
   line-height: 20px;
-  padding: 30px 10px;
+  padding: 10px 10px 30px 10px;
   z-index: -4;
 }
 .project-details h4 {
@@ -111,7 +111,7 @@ li {
   width: 95%;
 }
 .project-details p {
-  height: 35.399999618530273px;
+  height: 25.399999618530273px;
   width: 95%;
   font-weight: lighter;
   line-height: 1em;
