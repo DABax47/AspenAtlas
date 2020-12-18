@@ -4,7 +4,7 @@
   }
 } */
 
-@media all and (min-width: 190px) {
+@media all and (min-width: 190px) and(orientation:landscape) and(orientation:portrait) {
   *,
   *::before,
   *::after {
@@ -154,15 +154,13 @@
     filter: opacity();
   }
   .home-content-layer {
-    /* position: relative; */
+    position: relative;
     z-index: 200;
     height: 100%;
     width: 100%;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-
-    /* padding: 62px; */
 
     padding: 7.47889023%;
   }
@@ -189,6 +187,7 @@
     line-height: 39px;
   }
   .home-content p {
+    color: white;
     align-self: flex-end;
     padding: 0 12.4161787% 0 0;
     font-style: normal;
