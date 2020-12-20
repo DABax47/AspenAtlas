@@ -214,10 +214,10 @@ li {
 /* lg md sm desktop */
 @media screen and (max-width: 1157px) {
   body {
-    /* background-color: grey; */
+    background-color: grey;
   }
   p {
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: 200;
   }
   h1 {
@@ -240,7 +240,7 @@ li {
 /* tablet */
 @media screen and (max-width: 1020px) {
   body {
-    /* background-color: teal; */
+    background-color: teal;
   }
   p {
     font-size: 0.85em;
@@ -267,6 +267,9 @@ li {
   }
   .project-card {
     height: 12em;
+  }
+  small {
+    font-size: 0.5em;
   }
 }
 /* mobile */
