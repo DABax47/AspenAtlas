@@ -213,9 +213,6 @@ li {
 }
 /* lg md sm desktop */
 @media screen and (max-width: 1157px) {
-  body {
-    background-color: grey;
-  }
   p {
     font-size: 0.9em;
     font-weight: 200;
@@ -360,7 +357,6 @@ li {
     /* filter: opacity(); */
   }
   .home-content-layer {
-    /* background-color: rgba(98, 255, 207, 0.4); */
     z-index: 200;
     height: 100%;
     display: flex;
