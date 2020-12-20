@@ -270,11 +270,12 @@ li {
     flex-direction: column;
     overflow-y: auto;
     font-style: normal;
-    height: 100vh;
-    width: 95vw;
-    margin: 0;
+    height: 95vh;
+    width: 100vw;
+    margin-top: 0;
     font-family: Montserrat, sans-serif;
-    padding: 0;
+    padding-top: 5%;
+    align-items: center;
   }
   header {
     display: none;
@@ -370,10 +371,10 @@ li {
   }
   .home-content-layer h1 {
     text-decoration: underline;
-    font-size: 2.5em;
+    font-size: 1.5em;
   }
   .home-content-layer p {
-    font-size: 0.95em;
+    font-size: 0.55em;
     line-height: 200%;
     font-weight: 200;
     padding: 25px;
