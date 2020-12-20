@@ -17,144 +17,155 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/master.css" />
-    <link rel="stylesheet" href="./css/snow.css" />
+    <!-- <link rel="stylesheet" href="./css/snow.css" /> -->
   </head>
 
   <body>
-    <nav class="vertical-nav">
-      <ul>
-        <li id="home" class="active list-item">Home</li>
-        <li id="projects" class="list-item">Projects</li>
-      </ul>
-    </nav>
-    <section class="project-container">
-      <div class="project-card">
-        <a href="https://wc-fc.netlify.app/" target="_blank">
-          <img class="vs" src="./images/vs.png" alt="" />
-          <div class="project-details">
-            <span>
-              <h4>Built With</h4>
-              <p>React, React-Router, netlify</p>
-            </span>
-            <span>
-              <h4>Description</h4>
-              <p>
-                Enter player names and/or a team name. teams are shuffled and
-                paired into matches.
-              </p>
-            </span>
-          </div>
-        </a>
-      </div>
-      <div class="project-card">
-        <a href="https://dabax47.github.io/stox/" target="_blank">
-          <img class="vs" src="./images/stox.png" alt="" />
-          <div class="project-details">
-            <span>
-              <h4>Built With</h4>
-              <p>React, Chart.js</p>
-            </span>
-            <span>
-              <h4>Description</h4>
-              <p>
-                Users can enter a stock ticker symbol to recieve data from an
-                api on tablets and larger screens that data is then displayed
-                via graph.
-              </p>
-            </span>
-          </div>
-        </a>
-      </div>
-      <div class="project-card">
-        <a href="https://dabax47.github.io/todo/" target="_blank">
-          <img class="vs" src="./images/todo.png" alt="" />
-          <div class="project-details">
-            <span>
-              <h4>Built With</h4>
-              <p>React</p>
-            </span>
-            <span>
-              <h4>Description</h4>
-              <p>
-                A simple React App ToDo List
-                <br />
-                -Items will remain even after window refresh and close
-              </p>
-            </span>
-          </div>
-        </a>
-      </div>
-      <div class="project-card">
-        <a href="https://evening-shelf-93942.herokuapp.com/" target="_blank">
-          <img class="vs" src="./images/comp.jpg" alt="" />
-          <div class="project-details">
-            <span>
-              <h4>Built With</h4>
-              <p>Express</p>
-            </span>
-            <span>
-              <h4>Description</h4>
-              <p>
-                Users can drag/drop images and the resulting image file will be
-                compressed and available for download.
-              </p>
-            </span>
-          </div>
-        </a>
-      </div>
-      <div class="project-card">
-        <a href="https://dabax47.github.io/chess/" target="_blank">
-          <img class="vs" src="./images/chess.png" alt="" />
-          <div class="project-details">
-            <span>
-              <h4>Built With</h4>
-              <p>HTML, CSS , Javascript</p>
-            </span>
-            <span>
-              <h4>Description</h4>
-              <p>
-                landing page concept for online Chess tutoring
-              </p>
-            </span>
-          </div>
-        </a>
-      </div>
-    </section>
-    <section class="home-content">
-      <div class="hero"></div>
-      <span class="home-content-layer">
-        <h1>Dwayne Bynum</h1>
-        <p>
-          Hello and welcome thanks for visiting! I am a Full Stack Developer
-          looking to expand my experience and elevate my career. I am taking
-          active steps to finsih my degree in computer science and I actively
-          sharpen my development skills so that when given the opportunity I can
-          effectivly get to work in any enviroment. I am confident in my skills
-          and I know can support and help your company grow.<br />
-          <small>~Happy Holidays~</small>
-        </p>
-
-        <span class="contact-container">
-          <h2>Connect</h2>
-
-          <a
-            class="social-link"
-            href="https://www.linkedin.com/in/dwayne-bynum-4832771b1/"
-            target="_blank"
-          >
-            <i class="fa fa-linkedin-square" aria-hidden="true"></i
-          ></a>
-          <a
-            class="social-link"
-            href="https://github.com/DABax47"
-            target="_blank"
-          >
-            <i class="fa fa-github" aria-hidden="true"></i>
+    <header>
+      <nav class="vertical-nav">
+        <ul>
+          <li id="home" class="active list-item">Home</li>
+          <li id="project" class="list-item">Projects</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-content">
+      <section class="project-container">
+        <div class="project-card">
+          <a href="https://wc-fc.netlify.app/" target="_blank">
+            <img class="project-card-img" src="./images/vs.png" alt="" />
+            <div class="project-details-slider">
+              <div class="project-details-slider-details-header">
+                <h5>Built With</h5>
+                <p>React, React-Router, netlify</p>
+              </div>
+              <div>
+                <h5>Description</h5>
+                <p>
+                  Enter player names and/or a team name. teams are shuffled and
+                  paired into matches.
+                </p>
+              </div>
+            </div>
           </a>
-        </span>
-      </span>
-    </section>
+        </div>
+        <div class="project-card">
+          <a href="https://dabax47.github.io/stox/" target="_blank">
+            <img class="project-card-img" src="./images/stox.png" alt="" />
+            <div class="project-details-slider">
+              <div class="project-details-slider-details-header">
+                <h5>Built With</h5>
+                <p>React, Chart.js</p>
+              </div>
+              <div>
+                <h5>Description</h5>
+                <p>
+                  Users can enter a stock ticker symbol to recieve data from an
+                  api on tablets and larger screens that data is then displayed
+                  via graph.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="project-card">
+          <a href="https://dabax47.github.io/todo/" target="_blank">
+            <img class="project-card-img" src="./images/todo.png" alt="" />
+            <div class="project-details-slider">
+              <div class="project-details-slider-details-header">
+                <h5>Built With</h5>
+                <p>React</p>
+              </div>
+              <div>
+                <h5>Description</h5>
+                <p>
+                  A simple React App ToDo List
+                  <br />
+                  -Items will remain even after window refresh and close
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="project-card">
+          <a href="https://evening-shelf-93942.herokuapp.com/" target="_blank">
+            <img class="project-card-img" src="./images/comp.jpg" alt="" />
+            <div class="project-details-slider">
+              <div class="project-details-slider-details-header">
+                <h5>Built With</h5>
+                <p>Express</p>
+              </div>
+              <div>
+                <h5>Description</h5>
+                <p>
+                  Users can drag/drop images and the resulting image file will
+                  be compressed and available for download.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="project-card">
+          <a href="https://dabax47.github.io/chess/" target="_blank">
+            <img class="project-card-img" src="./images/chess.png" alt="" />
+            <div class="project-details-slider">
+              <div class="project-details-slider-details-header">
+                <h5>Built With</h5>
+                <p>HTML, CSS , Javascript</p>
+              </div>
+              <div>
+                <h5>Description</h5>
+                <p>
+                  landing page concept for online Chess tutoring
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section class="about-content-slider">
+        <div class="hero"></div>
+        <div class="home-content-layer">
+          <div class="text-container">
+            <h1>Dwayne Bynum</h1>
+            <p>
+              Hello and welcome thanks for visiting! I am a Full Stack Developer
+              looking to expand my experience and elevate my career. I am taking
+              active steps to finsih my degree in computer science and I
+              actively sharpen my development skills so that when given the
+              opportunity I can effectivly get to work in any enviroment. I am
+              confident in my skills and I know can support and help your
+              company grow.<br />
+              <small>~Happy Holidays~</small>
+            </p>
+          </div>
+
+          <div class="contact-container">
+            <h2>Connect</h2>
+
+            <a
+              class="social-link"
+              href="https://www.linkedin.com/in/dwayne-bynum-4832771b1/"
+              target="_blank"
+            >
+              <i
+                class="social-icons fa fa-linkedin-square"
+                aria-hidden="true"
+              ></i
+            ></a>
+            <a
+              class="social-link"
+              href="https://github.com/DABax47"
+              target="_blank"
+            >
+              <i class="social-icons fa fa-github" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <script type="text/javascript" src="./js/app.js"></script>
-    <script type="text/javascript" src="./js/snow.js"></script>
+    <!-- <script type="text/javascript" src="./js/snow.js"></script> -->
   </body>
 </html>
