@@ -66,22 +66,16 @@ body {
 small {
   padding-left: 70%;
 }
-@media screen and (max-width: 1157px) {
-  body {
-    background-color: red;
-  }
+/* @media screen and (max-width: 1157px) {
+
   .santa-hat {
     left: 3.5em;
     top: 2em;
   }
 }
 @media screen and (max-width: 1020px) {
-  body {
-    background-color: yellow;
-  }
+
 }
 @media screen and (max-width: 680px) {
-  body {
-    background-color: green;
-  }
-}
+
+} */
