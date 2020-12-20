@@ -130,7 +130,7 @@ li {
   transition: 0.4s ease-out;
 }
 .hero {
-  background: linear-gradient(0deg, rgba(25, 24, 24, 1), rgba(25, 24, 24, 1)),
+  background: linear-gradient(0deg, rgba(25, 24, 24, 0), rgba(25, 24, 24, 0)),
     url("../images/brown1.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -139,7 +139,6 @@ li {
   z-index: -1;
   height: 100%;
   width: 33%;
-  /* filter: opacity(0.8); */
 }
 .home-content-layer {
   z-index: 200;
@@ -269,12 +268,13 @@ li {
 @media screen and (max-width: 680px) {
   body {
     flex-direction: column;
-
-    overflow: auto;
+    overflow-y: auto;
     font-style: normal;
     height: 100vh;
     width: 95vw;
+    margin: 0;
     font-family: Montserrat, sans-serif;
+    padding: 0;
   }
   header {
     display: none;
@@ -282,6 +282,7 @@ li {
 
   .main-content {
     flex-direction: column-reverse;
+    width: 100%;
   }
   .project-container {
     display: flex;
@@ -339,9 +340,9 @@ li {
   }
 
   .about-content-slider {
-    margin: auto;
     position: relative;
-    width: 95vw;
+    width: 90vw;
+    margin: auto;
   }
   .hero {
     background: linear-gradient(0deg, rgba(25, 24, 24, 0), rgba(25, 24, 24, 0)),
@@ -353,7 +354,6 @@ li {
     z-index: -1;
     height: 100%;
     width: 33%;
-    /* filter: opacity(); */
   }
   .home-content-layer {
     z-index: 200;
