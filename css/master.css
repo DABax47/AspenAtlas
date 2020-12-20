@@ -282,7 +282,7 @@ li {
 
   .main-content {
     flex-direction: column-reverse;
-    width: 100%;
+    width: 100vw;
   }
   .project-container {
     display: flex;
@@ -341,7 +341,7 @@ li {
 
   .about-content-slider {
     position: relative;
-    width: 90vw;
+    width: 95vw;
     margin: auto;
   }
   .hero {
@@ -377,6 +377,10 @@ li {
     line-height: 200%;
     font-weight: 200;
     padding: 25px;
+  }
+  .home-content-layer small {
+    font-size: 0.75;
+    padding-left: 50%;
   }
   .contact-container {
     align-self: center;

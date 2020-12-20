@@ -63,9 +63,7 @@ body {
     transform: translateY(198vh);
   }
 }
-small {
-  padding-left: 70%;
-}
+
 /* @media screen and (max-width: 1157px) {
 
   .santa-hat {
