@@ -1,8 +1,12 @@
 $(document).ready(() => {
-  // if (window.innerWidth > 680) {
-  // } else {
-  //   console.log("mobile device");
-  // }
+  //animate the two containers to fade in after 2s
+  const $text_Container = $(".text-container");
+  const $contact_container = $(".contact_container");
+
+  //home content container animation
+  //get home container
+  //on click of the corresponding nav item trigger animation by adding class.
+  //on page load the home container is showing
   const toggleHome = (e) => {
     if (e.target.id === "home") {
       // abstract to function
@@ -13,10 +17,6 @@ $(document).ready(() => {
       $home.addClass("hide-home");
     }
   };
-  //home content container animation
-  //get home container
-  //on click of the corresponding nav item trigger animation by adding class.
-  //on page load the home container is showing
   const $home = $(".about-content-slider");
   $home.addClass("move-home");
 

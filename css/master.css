@@ -12,19 +12,28 @@ main {
   display: flex;
 }
 p {
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: 200;
-  display: inline-block;
 }
 h1 {
-  font-size: 4.2vw;
+  font-size: 3.5em;
 }
 h2 {
   text-decoration: underline;
-  font-size: 1.75vw;
-  padding-bottom: 5%;
+  font-size: 1.75em;
+  text-align: center;
+  padding: 2%;
 }
-
+a,
+a:active,
+a:visited {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+a:hover {
+  color: #efc76b;
+}
 body {
   overflow: hidden;
   font-style: normal;
@@ -119,13 +128,15 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  width: 66.180556%;
-
+  width: 82%;
   height: 100%;
   right: 0;
   top: 0;
   z-index: 100;
   transition: 0.4s ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .text-container {
@@ -133,34 +144,52 @@ li {
   z-index: 200;
   display: flex;
   flex-direction: column;
-  /* padding: 7.47889023% 7.47889023% 7.47889023% 30%; */
-  padding: 7.47889023%;
-  background-color: rgba(66, 68, 71, 0.4);
+  /* padding: 7.47889023%; */
+  padding: 4%;
+  background-color: rgba(66, 68, 71, 0.6);
   border-radius: 17px;
-  width: 75%;
+  width: 60%;
   margin: 100px auto;
 }
 .text-container strong {
-  color: black;
+  color: #efc76b;
+}
+.text-container h1 {
 }
 .text-container p {
   line-height: 200%;
 }
 .contact-container {
+  padding-bottom: 3%;
+  border-radius: 15px;
+  background-color: rgba(66, 68, 71, 0.6);
+  padding: 2%;
   color: white;
   align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact-info {
+  padding: 2% 0;
+}
+.contact-info p {
+  margin: 1% 0;
+  font-weight: 300;
+}
+.social-link-container {
   text-align: center;
 }
-
 .social-icons {
-  /* margin: 5% 5%; */
+  margin: 0 2%;
   color: white;
   transition: 0.4s;
-  font-size: 1.5em;
+  font-size: 3em;
 }
 /* psuedo classes */
 .social-icons:hover {
-  color: #333;
+  color: #efc76b;
+  transform: rotate(10deg);
 }
 .project-card:hover,
 .project-card-img:hover {
