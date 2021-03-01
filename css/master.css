@@ -123,7 +123,12 @@ li {
 }
 
 .about-content-slider {
-  background-image: url("../images/bg-img.png");
+  background: radial-gradient(
+      28.67% 45.37% at 50% 54.63%,
+      rgba(216, 211, 211, 0.72) 0%,
+      rgba(79, 66, 66, 0.66) 100%
+    ),
+    url("../images/bg-img.png");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -133,7 +138,7 @@ li {
   right: 0;
   top: 0;
   z-index: 100;
-  transition: 0.4s ease-out;
+  transition: 0.4s ease-out all;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -161,7 +166,7 @@ li {
 }
 .contact-container {
   padding-bottom: 3%;
-  border-radius: 15px;
+  border-radius: 15px 15px 0px 0px;
   background-color: rgba(66, 68, 71, 0.6);
   padding: 2%;
   color: white;
