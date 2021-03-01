@@ -1,4 +1,6 @@
+$("body").hide().delay(300);
 $(document).ready(() => {
+  $("body").fadeIn();
   //animate the two containers to fade in after 2s
   function showContactInfo() {
     const $text_Container = $(".text-container");
@@ -62,6 +64,7 @@ $(document).ready(() => {
   //get the project cards
   //on hover add move slider class
   const $projCard = $(".project-card");
+
   $projCard
     .mouseover((e) => {
       $(e.target).next().addClass("project-slider-move");

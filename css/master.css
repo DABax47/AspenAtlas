@@ -129,6 +129,7 @@ li {
       rgba(79, 66, 66, 0.66) 100%
     ),
     url("../images/bg-img.png");
+  background-blend-mode: darken;
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -198,8 +199,10 @@ li {
 }
 .project-card:hover,
 .project-card-img:hover {
+  transform: scale(1.5);
   border-radius: 0;
   box-shadow: 5px 2px 10px 0px;
+  z-index: 500;
 }
 /* js added classes */
 .project-slider-move {
