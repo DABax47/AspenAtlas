@@ -21,7 +21,6 @@ $(document).ready(() => {
       //show about slider
       $home.removeClass("hide-home");
       $home.addClass("move-home");
-      showContactInfo(x());
     } else {
       $home.removeClass("move-home");
       $home.addClass("hide-home");
@@ -72,4 +71,13 @@ $(document).ready(() => {
     .mouseout((e) => {
       $(e.target).next().removeClass("project-slider-move");
     });
+
+  var docWidth = document.documentElement.offsetWidth;
+
+  [].forEach.call(document.querySelectorAll("*"), function (el) {
+    console.log("searching...");
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  });
 });

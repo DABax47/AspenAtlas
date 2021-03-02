@@ -5,6 +5,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  width: 100vw;
+  height: 100vh;
+}
 body,
 header,
 nav,
@@ -35,6 +39,11 @@ a:hover {
   color: #efc76b;
 }
 body {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.48) 0%,
+    rgba(0, 0, 0, 0.36) 100%
+  );
   overflow: hidden;
   font-style: normal;
   height: 100vh;
@@ -217,4 +226,111 @@ li {
 .hide-home {
   transform: translateX(100%);
   opacity: 0;
+}
+/* mobile */
+@media screen and (max-width: 500px) {
+  body {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.48) 0%,
+      rgba(0, 0, 0, 0.36) 100%
+    );
+    font-style: normal;
+    height: 100vh;
+    width: 100vw;
+    font-family: Montserrat, sans-serif;
+    padding: 0;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  p {
+    font-size: 1.25em;
+    font-weight: 200;
+  }
+  h1 {
+    font-size: 2.25em;
+  }
+  h2 {
+    text-decoration: underline;
+    font-size: 1.25em;
+    text-align: center;
+    padding: 2%;
+  }
+  .main-content {
+    flex-direction: column-reverse;
+  }
+
+  .vertical-nav {
+    display: none;
+  }
+
+  .project-container {
+    flex-wrap: nowrap;
+    padding: 2%;
+    margin-top: 25%;
+    width: 100%;
+    flex-direction: column;
+  }
+  .project-card {
+    flex: 0 10 20em;
+    z-index: 1;
+    margin: 0 2% 10% 0;
+  }
+
+  .project-details-slider {
+    padding: 2%;
+  }
+  .project-details-slider h5 {
+    font-size: 2em;
+  }
+  .project-details-slider p {
+    font-size: 1.3em;
+  }
+
+  .about-content-slider {
+    position: inherit;
+    width: 100%;
+    height: 93vh;
+  }
+
+  .text-container {
+    padding: 2%;
+    width: 95%;
+    margin: 25% auto;
+  }
+
+  .contact-container {
+    align-self: auto;
+  }
+  .contact-info {
+    padding: 0 0;
+  }
+  .contact-info p {
+    margin: 2% auto;
+  }
+
+  .social-icons {
+    font-size: 2em;
+  }
+  /* psuedo classes */
+
+  .project-card:hover,
+  .project-card-img:hover {
+    transform: scale(1);
+  }
+  /* js added classes */
+  .project-slider-move {
+    left: 11%;
+    opacity: 1;
+  }
+
+  .move-home {
+    right: 0;
+    opacity: 1;
+  }
+  .hide-home {
+    transform: translateX(0%);
+    opacity: 1;
+  }
 }
