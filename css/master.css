@@ -230,11 +230,7 @@ li {
 /* mobile */
 @media screen and (max-width: 500px) {
   body {
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.48) 0%,
-      rgba(0, 0, 0, 0.36) 100%
-    );
+    background: none;
     font-style: normal;
     height: 100vh;
     width: 100vw;
@@ -297,7 +293,7 @@ li {
   .text-container {
     padding: 2%;
     width: 95%;
-    margin: 25% auto;
+    margin: auto auto;
   }
 
   .contact-container {
