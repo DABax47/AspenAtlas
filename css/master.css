@@ -227,8 +227,9 @@ li {
   transform: translateX(100%);
   opacity: 0;
 }
+
 /* mobile */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 850px) {
   body {
     background: none;
     font-style: normal;
