@@ -99,8 +99,10 @@ li {
 .project-card-img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   z-index: -2;
 
   transition: 0.3s ease-out;
@@ -152,6 +154,7 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 0 0 10px 0;
 }
 
 .text-container {
@@ -175,6 +178,7 @@ li {
   line-height: 200%;
 }
 .contact-container {
+  margin: 0 9.375px;
   padding-bottom: 3%;
   border-radius: 15px 15px 0px 0px;
   background-color: rgba(66, 68, 71, 0.6);
@@ -276,7 +280,11 @@ li {
   }
 
   .project-details-slider {
-    padding: 2%;
+    padding: 3%;
+     left: 0;
+    width: 100%;
+    opacity: .9;
+
   }
   .project-details-slider h5 {
     font-size: 2em;
