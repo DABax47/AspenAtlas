@@ -274,6 +274,7 @@ li {
     flex-direction: column;
   }
   .project-card {
+    height: 100%;
     flex: 0 10 20em;
     z-index: 1;
     margin: 0 2% 10% 0;
@@ -284,6 +285,7 @@ li {
      left: 0;
     width: 100%;
     opacity: .9;
+    height: 100%;
 
   }
   .project-details-slider h5 {
