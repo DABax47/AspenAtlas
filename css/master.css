@@ -100,9 +100,9 @@ li {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: center;
-  object-position: center;
+     object-position: center;
   z-index: -2;
 
   transition: 0.3s ease-out;
@@ -281,9 +281,10 @@ li {
 
   .project-details-slider {
     padding: 3%;
-    left: 0;
+     left: 0;
     width: 100%;
-    opacity: 0.9;
+    opacity: .9;
+
   }
   .project-details-slider h5 {
     font-size: 2em;
