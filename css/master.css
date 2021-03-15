@@ -136,8 +136,8 @@ li {
 .about-content-slider {
   background: radial-gradient(
       28.67% 45.37% at 50% 54.63%,
-      rgba(216, 211, 211, 0.72) 0%,
-      rgba(79, 66, 66, 0.66) 100%
+      rgba(216, 211, 211, .75) 0%,
+      rgba(79, 66, 66, 0.6) 100%
     ),
     url("../images/bg-img.png");
   background-blend-mode: darken;
@@ -163,23 +163,21 @@ li {
   display: flex;
   flex-direction: column;
   /* padding: 7.47889023%; */
-  padding: 4%;
+  padding:  2% 4% ;
   background-color: rgba(66, 68, 71, 0.6);
   border-radius: 17px;
   width: 60%;
-  margin: 100px auto;
+  margin: 50px auto;
 }
 .text-container strong {
   color: #efc76b;
 }
-.text-container h1 {
-}
+
 .text-container p {
   line-height: 200%;
 }
 .contact-container {
-  margin: 0 9.375px;
-  padding-bottom: 3%;
+  /* margin: 0 9.375px; */
   border-radius: 15px 15px 0px 0px;
   background-color: rgba(66, 68, 71, 0.6);
   padding: 2%;
@@ -187,11 +185,8 @@ li {
   align-self: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
-.contact-info {
-  padding: 2% 0;
-}
+
 .contact-info p {
   margin: 1% 0;
   font-weight: 300;
