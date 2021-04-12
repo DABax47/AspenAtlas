@@ -180,9 +180,8 @@ li {
   line-height: 200%;
 }
 .contact-container {
-  background-color: red;
   border-radius: 15px 15px 0px 0px;
-  /* background-color: rgba(66, 68, 71, 0.6); */
+  background-color: rgba(66, 68, 71, 0.6);
   padding: 2%;
   color: white;
   align-self: center;
