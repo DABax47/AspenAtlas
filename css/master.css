@@ -24,6 +24,7 @@ h1 {
 }
 h2 {
   text-decoration: underline;
+
   font-size: 1.75em;
   text-align: center;
   padding: 2%;
@@ -104,6 +105,7 @@ li {
   -webkit-object-fit: cover;
 
   -o-object-position: center;
+  -webkit-object-position: center;
   object-position: center;
   z-index: -2;
 
@@ -155,7 +157,7 @@ li {
   transition: 0.4s ease-out all;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 0 10px 0;
 }
 
@@ -167,10 +169,10 @@ li {
   /* padding: 7.47889023%; */
   padding: 2% 4%;
   background-color: rgba(66, 68, 71, 0.6);
-  border-radius: 17px;
+  border-radius: 17px 17px 0px 0px;
   width: 80%;
 
-  margin: 30px auto;
+  margin: 30px auto 0 auto;
 }
 .text-container strong {
   color: #efc76b;
@@ -180,9 +182,9 @@ li {
   line-height: 200%;
 }
 .contact-container {
-  border-radius: 15px 15px 0px 0px;
+  border-radius: 0px 0px 15px 15px;
   background-color: rgba(66, 68, 71, 0.6);
-  padding: 2%;
+  padding: 0 2%;
   color: white;
   align-self: center;
   width: 80%;
@@ -278,6 +280,8 @@ li {
     z-index: 1;
     margin: 0 2% 10% 0;
   }
+  .project-card img {
+  }
 
   .project-details-slider {
     padding: 3%;
@@ -307,6 +311,7 @@ li {
 
   .contact-container {
     align-self: auto;
+    width: 95%;
   }
   .contact-info {
     padding: 0 0;
